@@ -1,5 +1,10 @@
 @0x95f5e5f118ac23a4;
 
+# required golang-specific annotations
+using Go = import "/go.capnp";
+$Go.package("keys");
+$Go.import("github.com/regen-network/keys");
+
 enum KeygenAlgorithm {
   keygenSecp256k1 @0;
   keygenSecp256r1 @1;
